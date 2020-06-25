@@ -1,0 +1,27 @@
+.content{
+    background-color: #3f2204;
+    height: 100vh;
+    width: 100vw;
+}
+
+
+
+.player-list{
+    display: flex;
+    padding-top: 10%;
+    width: 50%;
+    margin: auto;
+    justify-content: space-around;
+}
+
+.logo {
+    text-align: center;
+}
+
+.joueur{
+    text-align: center;
+}
+
+.joueur h3{
+    color: white;
+}

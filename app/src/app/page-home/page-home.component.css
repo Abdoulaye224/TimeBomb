@@ -1,0 +1,18 @@
+.content{
+    background-image: url("../../assets/bigben.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100vw;
+    height: 100vh;
+}
+
+.logo{
+    text-align: center;
+    padding-top: 10%;
+}
+
+.nombre{
+    height: 30px;
+    border-radius: 5px;
+}
