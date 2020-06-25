@@ -1,3 +1,4 @@
+import { JoueurService } from './../joueur.service';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -7,9 +8,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PageHomeComponent implements OnInit {
 
-  constructor() { }
+   selectedValue: Number;
+
+  constructor(private srvJoueur: JoueurService) { }
 
   ngOnInit(): void {
+  }
+
+  public setSelectedValue(){
+    this.srvJoueur.getPlayersName(this.selectedValue);
   }
 
 }

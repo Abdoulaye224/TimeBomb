@@ -1,3 +1,5 @@
+import { JoueurService } from './../joueur.service';
+import { Joueur } from './../joueur';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -7,9 +9,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PageJoueurComponent implements OnInit {
 
-  constructor() { }
+  JoueurForm: Joueur = new Joueur();
 
-  ngOnInit(): void {
+  constructor(private srvJoueur: JoueurService) { }
+
+  ngOnInit() {
+  }
+
+  public ajouterJoueur(){
+    this.srvJoueur.ajouterJoueur(this.JoueurForm);
+    this.JoueurForm = new Joueur();
   }
 
 }

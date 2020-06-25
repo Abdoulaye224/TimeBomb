@@ -4,14 +4,19 @@
 
         <div class = "logo">
             <img src = "../../assets/logo.png"><br>
-            <input type = "text" />
+            <input type = "text"[(ngModel)]="JoueurForm.pseudo" />
             <br><br>
-            <button class= "btn btn-success">Ajouter !</button>
-            <button style = "display: none;" class = "btn btn-success">Commencer ! </button>
+            <button  *ngIf="!srvJoueur.maxAtteint" class= "btn btn-success" (click)="ajouterJoueur()">Ajouter !</button>
+
+            <button  *ngIf="srvJoueur.maxAtteint" class = "btn btn-success">Commencer ! </button>
         </div>
 
-        <div class = "joueur">
+        <div class = "joueur" style="color: white;">
             <h3><strong>Joueurs</strong></h3>
+            <ul *ngFor="let joueur of srvJoueur.joueurs">
+                <ul>{{ joueur.pseudo }}</ul>
+            </ul>
+            
         </div>
 
     </div>
