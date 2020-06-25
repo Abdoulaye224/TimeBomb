@@ -8,7 +8,7 @@
             <br><br>
             <button  *ngIf="!srvJoueur.maxAtteint" class= "btn btn-success" (click)="ajouterJoueur()">Ajouter !</button>
 
-            <button  *ngIf="srvJoueur.maxAtteint" class = "btn btn-success">Commencer ! </button>
+            <button  *ngIf="srvJoueur.maxAtteint" routerLink="/jeu" class = "btn btn-success">Commencer ! </button>
         </div>
 
         <div class = "joueur" style="color: white;">

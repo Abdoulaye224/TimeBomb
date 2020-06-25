@@ -11,7 +11,7 @@ export class PageJoueurComponent implements OnInit {
 
   JoueurForm: Joueur = new Joueur();
 
-  constructor(private srvJoueur: JoueurService) { }
+  constructor(public srvJoueur: JoueurService) { }
 
   ngOnInit() {
   }
