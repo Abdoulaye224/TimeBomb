@@ -2,10 +2,14 @@
     <div class="carte" *ngFor="let joueur of srvJoueur.joueurs">
       <!-- <div>{{ joueur.pseudo }}</div> -->
         <div>
-          <img class="card-img-top" src="..." alt="Card image cap">
               <div class="card-body">
                 <h5 class="card-title">{{ joueur.pseudo }}</h5>
-                <a href="#" class="btn btn-primary">Jouer !</a>
+              
+                <div class = "images" style = "display: flex; justify-content: space-around; flex-wrap: wrap;" >
+                  <img id="card" style = "width: 10vw; height: 30vh;" src = "../../assets/back.jpg" *ngFor="let joueur of srvJoueur.joueurs">
+                </div>
+                <br>
+                  <a href="#" class="btn btn-primary">Jouer !</a>
               </div>
         </div>
       </div>
