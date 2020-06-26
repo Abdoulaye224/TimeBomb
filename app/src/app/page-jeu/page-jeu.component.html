@@ -6,7 +6,7 @@
                 <h5 class="card-title">{{ joueur.pseudo }}</h5>
               
                 <div class = "images" style = "display: flex; justify-content: space-around; flex-wrap: wrap;" >
-                  <img id="card" style = "width: 10vw; height: 30vh;" src = "../../assets/back.jpg" *ngFor="let joueur of srvJoueur.joueurs">
+                  <img id="card" style = "width: 10vw; height: 30vh;" src="{{imgStr}}" *ngFor="let joueur of srvJoueur.joueurs">
                 </div>
                 <br>
                   <a href="#" class="btn btn-primary">Jouer !</a>
