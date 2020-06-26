@@ -1,3 +1,4 @@
+import { JoueurService } from './../joueur.service';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -7,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PageJeuComponent implements OnInit {
 
-  constructor() { }
+  constructor(public srvJoueur: JoueurService) { }
 
   ngOnInit(): void {
   }
