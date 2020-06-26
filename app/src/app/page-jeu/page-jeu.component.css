@@ -1,0 +1,15 @@
+
+
+#tout{
+    display: flex; 
+    flex-wrap: wrap; 
+    border: 10px solid #3f2204;
+    width: 100vw;
+}
+
+.carte{
+    width: 50%;
+    text-align: center;
+    height: calc(50vh - 10px);
+    border: 2px solid black;
+}

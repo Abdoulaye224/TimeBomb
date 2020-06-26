@@ -1,22 +1,13 @@
-<p>page-jeu works!</p>
+  <div id="tout">
+    <div class="carte" *ngFor="let joueur of srvJoueur.joueurs">
+      <!-- <div>{{ joueur.pseudo }}</div> -->
+        <div>
+          <img class="card-img-top" src="..." alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-title">{{ joueur.pseudo }}</h5>
+                <a href="#" class="btn btn-primary">Jouer !</a>
+              </div>
+        </div>
+      </div>
+  </div>
 
-<div style="display: flex;" id="tout">
-    <div *ngFor="let joueur of srvJoueur.joueurs">
-        <!-- <div>{{ joueur.pseudo }}</div> -->
-        
-
-        <div class="card" style="width: 18rem;">
-            <img class="card-img-top" src="..." alt="Card image cap">
-            <div class="card-body">
-              <h5 class="card-title">{{ joueur.pseudo }}</h5>
-              <p class="card-text">title and make up the bulk of the card's content.</p>
-              <a href="#" class="btn btn-primary">Jouer !</a>
-            </div>
-          </div>
-
-
-
-    </div>
-  
-
-</div>
